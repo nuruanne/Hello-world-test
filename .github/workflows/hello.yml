@@ -18,8 +18,18 @@ jobs:
       - name: copy the file to dir
         run: cp Nuru /home/runner/work/Hello-world-test/Hello-world-test/uma
 
+  deployment_job:
+    runs-on: ubuntu-latest
+    needs: Running_the-linux_commands
+    steps:
+      - name: Deployment
+        run: echo "Deploy the contianer"
+      - name: deployment is completed
+        run: echo "deploy the application succesfully"
+
   Running_the_newcommands:
     runs-on: ubuntu-latest
+    needs: [Running_the-linux_commands, deployment_job]
     steps:
       - name: test the server
         run: echo "welcome to india"
