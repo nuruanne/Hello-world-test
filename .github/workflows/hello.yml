@@ -26,4 +26,4 @@ jobs:
       - name: Step two
         run: echo "this another step for second job"
       - name: Display date
-        run: data
+        run: date
