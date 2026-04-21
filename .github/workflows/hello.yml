@@ -16,5 +16,5 @@ jobs:
       - name: create dir
         run: mkdir uma
       - name: copy the file to dir
-        run: cp Nuru /uma
+        run: cp Nuru /home/runner/work/Hello-world-test/Hello-world-test/uma
 
