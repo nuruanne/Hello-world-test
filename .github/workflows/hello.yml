@@ -16,5 +16,5 @@ jobs:
       - name: create dir
         run: mkdir uma
       - name: copy the file to dir
-        run: cp nuru /uma
+        run: cp Nuru /uma
 
