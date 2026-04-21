@@ -11,5 +11,11 @@ jobs:
       steps:
         - name: Hello world Step
           run: echo "Hello, world!"
-        - name: another step
-          run: echo "This another workflow" 
+        - name: step two
+          run: echo "This another workflow"
+        - name: display date
+          run: date
+        - name: List files
+          run: ls -la
+        - name: show the tmp
+          run: ls /var
