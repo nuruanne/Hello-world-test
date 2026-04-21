@@ -18,3 +18,12 @@ jobs:
       - name: copy the file to dir
         run: cp Nuru /home/runner/work/Hello-world-test/Hello-world-test/uma
 
+  Running_the_newcommands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test the server
+        run: echo "welcome to india"
+      - name: Step two
+        run: echo "this another step for second job"
+      - name: Display date
+        run: data
