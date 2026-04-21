@@ -19,3 +19,7 @@ jobs:
           run: ls -la
         - name: show the tmp
           run: ls /var
+        - name: working area
+          run: pwd
+        - name: whomami
+          run: whoami
