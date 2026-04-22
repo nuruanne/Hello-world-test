@@ -9,8 +9,9 @@ jobs:
   Running_the-linux_commands:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout the code
+        uses: actions/checkout@v2
       - name: run the commnds
         run: ls -lrt
       - name: run the demo script
         run: echo "Running the demo script..."
-        
