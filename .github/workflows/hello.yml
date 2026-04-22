@@ -9,14 +9,12 @@ jobs:
   Running_the-linux_commands:
     runs-on: ubuntu-latest
     steps:
-      - name: Current directory
-        run: pwd
-      - name: create new file 
-        run: touch Nuru
-      - name: create dir
-        run: mkdir uma
-      - name: copy the file to dir
-        run: cp Nuru /home/runner/work/Hello-world-test/Hello-world-test/uma
+      - name: run the commnds
+        run: |
+          pwd 
+          touch Nuru
+          mkdir uma
+          cp Nuru /home/runner/work/Hello-world-test/Hello-world-test/uma
 
   deployment_job:
     runs-on: ubuntu-latest
