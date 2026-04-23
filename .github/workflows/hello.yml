@@ -12,7 +12,11 @@ jobs:
       - name: checkout the code
         uses: actions/checkout@v2
       - name: Set the variables
+        env:
+          City: "New York"
+          Trainer: "Nuru"
         run: |
           echo "City is $City"
           echo "Trainer is $Trainer"
-          
+      - name: Next step
+        run: echo "City is $City and Trainer is $Trainer"
