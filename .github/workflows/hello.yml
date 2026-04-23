@@ -5,20 +5,32 @@ on:
     branches:
       - main
 
+env:
+  Brand: "TATA"
+  Trainer: "Nuru"  
+
 jobs:
   Running_the-linux_commands:
     runs-on: ubuntu-latest
+    env:
+      City: "New York"
+      Trainer: "Nuru"
     steps:
       - name: checkout the code
         uses: actions/checkout@v2
       - name: Set the variables
-        env:
-          City: "New York"
-          Trainer: "Nuru"
         run: |
           echo "City is $City"
           echo "Trainer is $Trainer"
+          echo "Brand is $Brand"
       - name: Next step
         run: echo "City is $City and Trainer is $Trainer"
       - name: Printing the default variables
         run: echo "Github Repository is $GITHUB_REPOSITORY Github ref is $GITHUB_REF Github Commit is $GITHUB_SHA"
+  Deploy:
+    runs-on: ubuntu-latest
+    needs: Running_the-linux_commands
+    steps:
+      - name: checkout the code
+        run: |
+          echo "$City is the city and $Trainer is the trainer"
