@@ -11,7 +11,8 @@ jobs:
     steps:
       - name: checkout the code
         uses: actions/checkout@v2
-      - name: run the commnds
-        run: ls -lrt
-      - name: run the demo script
-        run: echo "Running the demo script..."
+      - name: Set the variables
+        run: |
+          echo "City is $City"
+          echo "Trainer is $Trainer"
+          
