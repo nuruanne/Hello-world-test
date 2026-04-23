@@ -20,3 +20,5 @@ jobs:
           echo "Trainer is $Trainer"
       - name: Next step
         run: echo "City is $City and Trainer is $Trainer"
+      - name: Printing the default variables
+        run: echo "Github Repository is $GITHUB_REPOSITORY Github ref is $GITHUB_REF Github Commit is $GITHUB_SHA"
