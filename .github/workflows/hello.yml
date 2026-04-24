@@ -23,6 +23,10 @@ jobs:
           echo "City is $City"
           echo "Trainer is $Trainer"
           echo "Brand is $Brand"
+      - name: Print the Repo variables
+        run: echo "Tomcat IP ${{ vars.TOMCATIP }}"
+      - name: Print the variables name
+        run: echo "USERNAME ${{ vars.USERNAME }}"
       - name: Next step
         run: echo "City is $City and Trainer is $Trainer"
       - name: Printing the default variables
