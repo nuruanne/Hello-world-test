@@ -5,3 +5,4 @@ echo "current date and time: $(date)"
 echo "Listing files in the current directory:"
 ls -l
 echo "Demo script completed."
+echo "Hello"
